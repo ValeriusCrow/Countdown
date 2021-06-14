@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.coming-soon {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.day, .hour, .minute, .second {
+    font-size: 3rem;
+}
+
+.waiting {
+    max-width: 80vw;
+    height: 50vh;
+}
+
+@media (max-width: 396px) {
+    h2 {
+        text-align: center;
+        font-size: 18vw;
+        padding: 0 30px 25px 30px;
+    }
+
+
+    .countdown {
+        flex-direction: column;
+    }
+
+
+    .waiting {
+    max-width: 80vw;
+        height: 100%;
+}
+}
+
